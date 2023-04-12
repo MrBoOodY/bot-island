@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+})->name('dashboard');
+
+Route::get('/tables', function () {
+    return view('dashboard.pages.tables');
+})->name('tables');

@@ -340,8 +340,8 @@ class ComposerStaticInitd4c82e67419ea3588988961f0a6f6ae6
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -2315,6 +2315,7 @@ class ComposerStaticInitd4c82e67419ea3588988961f0a6f6ae6
         'Illuminate\\Process\\InvokedProcess' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/InvokedProcess.php',
         'Illuminate\\Process\\InvokedProcessPool' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/InvokedProcessPool.php',
         'Illuminate\\Process\\PendingProcess' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/PendingProcess.php',
+        'Illuminate\\Process\\Pipe' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/Pipe.php',
         'Illuminate\\Process\\Pool' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/Pool.php',
         'Illuminate\\Process\\ProcessPoolResults' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/ProcessPoolResults.php',
         'Illuminate\\Process\\ProcessResult' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/ProcessResult.php',

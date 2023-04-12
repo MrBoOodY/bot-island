@@ -1816,6 +1816,7 @@ return array(
     'Illuminate\\Process\\InvokedProcess' => $vendorDir . '/laravel/framework/src/Illuminate/Process/InvokedProcess.php',
     'Illuminate\\Process\\InvokedProcessPool' => $vendorDir . '/laravel/framework/src/Illuminate/Process/InvokedProcessPool.php',
     'Illuminate\\Process\\PendingProcess' => $vendorDir . '/laravel/framework/src/Illuminate/Process/PendingProcess.php',
+    'Illuminate\\Process\\Pipe' => $vendorDir . '/laravel/framework/src/Illuminate/Process/Pipe.php',
     'Illuminate\\Process\\Pool' => $vendorDir . '/laravel/framework/src/Illuminate/Process/Pool.php',
     'Illuminate\\Process\\ProcessPoolResults' => $vendorDir . '/laravel/framework/src/Illuminate/Process/ProcessPoolResults.php',
     'Illuminate\\Process\\ProcessResult' => $vendorDir . '/laravel/framework/src/Illuminate/Process/ProcessResult.php',
