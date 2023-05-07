@@ -76,8 +76,7 @@
                             <p class="pb-3"><em>{{ $contact->word }}.</em>
                             </p>
                             <p>
-                                {{ $contact->address }}  <br>
-                                Cairo, Egypt<br><br>
+                                {{ $contact->address }}  <br><br>
                                 <strong>Phone:</strong>{{ $contact->phone }}<br>
                                 <strong>Email:</strong> {{ $contact->email }}<br>
                             </p>
