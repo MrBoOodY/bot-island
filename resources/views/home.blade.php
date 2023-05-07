@@ -84,7 +84,7 @@
                 @foreach ($services as $service)
 
 
-                  <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                  <div class="col-lg-3 col-md-4 mt-4">
                       <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
                           <i class="{{$service->icon}}" style="color: #ffbb2c;"></i>
                           <h3><a href="#">{{ $service->word }}</a></h3>
