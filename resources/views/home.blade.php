@@ -86,7 +86,7 @@
 
                   <div class="col-lg-3 col-md-4 mt-4">
                       <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-                          <i class="{{$service->icon}}" style="color: #ffbb2c;"></i>
+                          <i class="{{$service->icon}}" style="color:{{ $service->color }};"></i>
                           <h3><a href="#">{{ $service->word }}</a></h3>
                       </div>
                   </div>
@@ -310,6 +310,11 @@
                               <img src="/personFolder/{{$person->photo}}" class="testimonial-img" alt="">
                               <h3>{{ $person->word }}</h3>
                               <h4>CO &amp; {{ $person->word }}</h4>
+                              <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                               {{ $person->desc }}
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
                           </div>
                       </div><!-- End testimonial item -->
 @endforeach

@@ -22,6 +22,24 @@
         <input type="text" class="form-control" name="job" value="{{ $person->job }}">
       </div>
 
+
+
+
+
+
+
+      <div class="form-group" style="margin-left: 10px;">
+        <label for="exampleInputEmail1">Description</label>
+        <input type="text" class="form-control" name="desc" value="{{ $person->desc }}">
+      </div>
+
+
+
+
+
+
+
+
       <div class="form-group" style="margin-left: 10px;">
         <label for="exampleInputEmail1">Image</label>
         <input type="file" class="form-control" name="photo">

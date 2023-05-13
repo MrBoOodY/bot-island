@@ -22,6 +22,12 @@
         <input type="text" class="form-control" name="icon" value="{{$services->icon }}">
       </div>
 
+
+      <div class="form-group" style="margin-left: 10px;">
+        <label for="exampleInputEmail1">Color</label>
+        <input type="text" class="form-control" name="color" value="{{$services->color }}">
+      </div>
+
     <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Submit</button>
   </form>
         </div>

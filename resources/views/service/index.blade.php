@@ -20,6 +20,7 @@
                   <tr>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">id</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Word</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Color</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Icon</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
 
@@ -39,6 +40,11 @@
                     <td>
                         <h6 class="mb-0 text-sm">{{ $service->word }}</h6>
                     </td>
+
+                    <td>
+                        <div class="mb-0 text-sm" style="background-color:{{ $service->color }};width:100px;height:60px;"></div>
+                    </td>
+
                     <td>
                         <i class="{{$service->icon}}"></i>
 

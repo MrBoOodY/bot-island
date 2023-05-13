@@ -18,6 +18,7 @@ class CreatePeopleTable extends Migration
             $table->string('photo');
             $table->string('job');
             $table->string('word');
+            $table->text('desc');
             $table->timestamps();
         });
     }

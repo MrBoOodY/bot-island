@@ -34,10 +34,12 @@ class ServiceController extends Controller
         $validatedData = $request->validate([
             'word' => 'required',
             'icon' => 'required',
+            'color' => 'required',
         ]);
         Service::create([
             'word' => $request->word,
             'icon'=>$request->icon,
+            'color'=>$request->color,
         ]);
         session()->flash('Add','Added Successfully');
         return redirect()->route('services.index');
@@ -75,10 +77,12 @@ class ServiceController extends Controller
         $validatedData = $request->validate([
             'word' => 'required',
             'icon' => 'required',
+            'color' => 'required',
         ]);
         $services=Service::where('id',$request->id)->update([
             'word' => $request->word,
             'icon'=>$request->icon,
+            'color'=>$request->color,
         ]);
     session()->flash('Add','Updated Successfully');
     return redirect()->route('services.index');

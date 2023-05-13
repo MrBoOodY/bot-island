@@ -35,6 +35,7 @@ class PersonController extends Controller
             'word' => 'required',
             'job' => 'required',
             'photo' => 'required',
+            'desc'=>'required',
 
         ]);
                 $img = $request->photo;
@@ -45,6 +46,7 @@ class PersonController extends Controller
             'word' => $request->word,
             'job'=>$request->job,
             'photo'=>$imagename,
+            'desc'=>$request->desc,
         ]);
         session()->flash('Add','Added Successfully');
         return redirect()->route('person.index');
@@ -84,6 +86,7 @@ class PersonController extends Controller
             'word' => 'required',
             'job' => 'required',
             'photo' => 'required',
+            'desc'=>'required',
 
         ]);
 
@@ -100,6 +103,7 @@ if($request->photo != null) {
         'word' => $request->word,
         'job'=>$request->job,
         'photo'=>$imagename,
+        'desc'=>$request->desc,
     ]);
     session()->flash('Add','Updated Successfully');
         return redirect()->route('person.index');
@@ -108,6 +112,7 @@ else
 Person::where('id',$request->id)->update([
     'word' => $request->word,
     'job'=>$request->job,
+    'desc'=>$request->desc,
 ]);
 session()->flash('Add','Updated Successfully');
 return redirect()->route('person.index');

@@ -22,6 +22,7 @@
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Image</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Word</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Job</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Description</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
 
                     <th class="text-secondary opacity-7"></th>
@@ -46,6 +47,12 @@
                       <td>
                         <h6 class="mb-0 text-sm">{{$person->job }}</h6>
                       </td>
+
+                      <td>
+                        <h6 class="mb-0 text-sm">{{$person->desc }}</h6>
+                      </td>
+
+
                     <td class="align-middle">
                         <a href="{{ route('person.edit',$person->id) }}" class="btn btn-success" data-toggle="tooltip">
                             Edit
